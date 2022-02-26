@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: dev
+
+secure:
+  username: mehmet
+  password: password
+  roles: admin
+
+ms:
+  book:
+    name: BOOK-SERVICE
+    path: /api/book
+  customer:
+    name: CUSTOMER-SERVICE
+    path: /api/customer
+  order:
+    name: ORDER-SERVICE
+    path: /api/order
+  statistics:
+    name: ORDER-SERVICE
+    path: /api/statistics

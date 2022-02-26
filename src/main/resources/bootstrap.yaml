@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: readingIsGood
+  cloud:
+    kubernetes:
+      reload:
+        enabled: true
+        mode: polling
+        period: 5000
+      config:
+        sources:
+          - name: readingIsGood-config
+
+  main:
+    allow-bean-definition-overriding: true
+
+management:
+  endpoint:
+    refresh:
+      enabled: true
+    restart:
+      enabled: true
+    health:
+      enabled: true
+    info:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
