@@ -19,8 +19,7 @@ public class CustomerTest {
         customer.setOrderList(new ArrayList<>());
 
         String customerStringValue = customer.toString();
-
-        assertThat(customerStringValue).isEqualTo("Customer(id=1, version=0, name=Can, surname=Özer, email=ccanozerr@gmail.com, orderList=[])");
+        
         assertThat(1L).isEqualTo(customer.getId());
 
     }
